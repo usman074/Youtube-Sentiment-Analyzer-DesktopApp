@@ -1,0 +1,29 @@
+﻿<Window x:Class="VP_PROJECT.wholeAnalysis"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="wholeAnalysis" Height="450" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label Content="Average Score"/>
+            <Label Content="Average Sadness"/>
+            <Label Content="Average Joy"/>
+            <Label Content="Average Fear"/>
+            <Label Content="Average Disgust"/>
+            <Label Content="Average Anger"/>
+            <Button x:Name="backBtn" Content="Back" Width="100" Height="30" Click="backBtn_Click"/>
+
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <Label Name="score" Content=""/>
+            <Label Name="sadness" Content=""/>
+            <Label Name="joy" Content=""/>
+            <Label Name="fear" Content=""/>
+            <Label Name="disgust" Content=""/>
+            <Label Name="anger" Content=""/>
+        </StackPanel>
+    </Grid>
+</Window>
